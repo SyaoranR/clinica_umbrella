@@ -1,0 +1,37 @@
+body {
+    /* comentário */
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    padding: 1 0px 15px;
+}
+
+.cabecalho {
+    height: dgg;
+    background-color: black;
+}
+
+#img-logo {
+    width: 100px;
+    height: 100px;
+}
+
+#nome-logo {
+    color: white;
+    font-size: 30pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.body-container {
+    min-height: 80px;
+}
+
+footer {
+    height: 50px;
+    background-color: aquamarine; 
+    color: wheat;
+    font-size: 14pt;
+    text-align: center;
+}
