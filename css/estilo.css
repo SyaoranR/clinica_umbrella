@@ -5,17 +5,102 @@ body {
 
 .container {
     width: 100%;
-    padding: 1 0px 15px;
+    padding: 10px 15px;
+}
+
+.body-container {
+    min-height: 80vh;
+ }
+
+/* , tanto para um quanto para outro*/
+.container,
+.body-container {
+    width: 60%;
+    padding: 10px 20%;
 }
 
 .cabecalho {
-    height: dgg;
+    height: 100px;
     background-color: black;
+    /* se mover, mas dentro da mesma linha , sem isso, aparece tudo abaixo */
+    display: inline-flex;
 }
+
+.cabecalho > * {
+    vertical-align: middle;
+}
+
+.cabecalho a {
+    text-decoration: none;
+}
+
+/* todos os menus dentro de cabecalho */
+.cabecalho .menu {
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.cabecalho .menu ul {
+    flex-direction: row;
+    display: table;
+    border-spacing: 5px;
+    /* sem as 'bolinhas' padrão da lista */
+    list-style: none;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-right: auto !important;
+}
+
+.cabecalho .menu ul li {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 90px;
+    height: 40px;
+    /* 'curvar' a borda */
+    border-radius: 0.25rem;
+    /* qualquer mudança 'estado'ocorre nesse tempo */
+    transition: all 0.1s linear;
+    cursor: pointer;
+}
+
+.cabecalho .menu ul li:hover {
+    height: 80px;
+}
+
+.botao {
+    border: none;
+    border-radius: 0.25rem;
+    background: linear-gradient(to bottom, #007B25, #238d34);
+    padding: 2px 15px;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+
+/*
+.cabecalho button {
+    border: none;
+    margin-left: 10px;
+}
+*/
 
 #img-logo {
     width: 100px;
     height: 100px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+#img-home {
+    margin: 25px auto;
+    width: 700px;
+    height: 700px;
 }
 
 #nome-logo {
@@ -30,7 +115,7 @@ body {
 
 footer {
     height: 50px;
-    background-color: aquamarine; 
+    background-color: darkblue; 
     color: wheat;
     font-size: 14pt;
     text-align: center;

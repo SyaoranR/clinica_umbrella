@@ -18,9 +18,30 @@
     <!-- Cabeçalho -->
     <!-- Define um espaço sem visualização, divide em partes menores -->
     <div class="container cabecalho">
-        <!-- Alt = texto alternativo se img não aparecer --> 
+        <a href="?pagina=home">
+            <!-- Alt = texto alternativo se img não aparecer --> 
+            <img id="img-logo" src="img/umbrella.png" alt="Logo">
+            <span id="nome-logo">Clínica Umbrella</span>
+        </a>
+        <div class="menu">
+            <ul> <!-- unordered list -->
+                <a href="?pagina=login">
+                    <li class="botao">
+                        Fazer Login
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <!--
+        <button>
+            <a href="?pagina=login">Fazer Login</a>
+        </button>
+        -->
+        <!-- 
+        Alt = texto alternativo se img não aparecer  
         <img id="img-logo" src="img/umbrella.png" alt="Logo">
         <span id="nome-logo">Clínica Umbrella</span>
+         -->
     </div>
     
 </header>    
