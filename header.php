@@ -25,11 +25,35 @@
         </a>
         <div class="menu">
             <ul> <!-- unordered list -->
-                <a href="?pagina=login">
-                    <li class="botao">
-                        Fazer Login
-                    </li>
-                </a>
+                <?php if (isset($_SESSION['usuario_fez_login'])) { ?>
+
+                    <a href="?pagina=consultas">
+                        <li class="botao">
+                            Consultas
+                        </li>
+                    </a>
+                    <a href="?pagina=pacientes">
+                        <li class="botao">
+                            Pacientes
+                        </li>
+                    </a>
+                    <a href="?pagina=medicos">
+                        <li class="botao">
+                            Médicos
+                        </li>
+                    </a>
+                    <a href="sair.php">Logoff</a>
+
+                <?php } else { ?>}
+                
+                    <a href="?pagina=login">
+                        <li class="botao">
+                            Fazer Login
+                        </li>
+                    </a>
+                    
+
+                <?php } ?>
             </ul>
         </div>
         <!--

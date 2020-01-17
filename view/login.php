@@ -1,7 +1,7 @@
 <div class="container">
     <div class="grade">
         <h2>Login</h2>
-        <form action="src/autenticar-login.php" method="POST">
+        <form action="src/autenticar-login.php" method="post">
             <label for="input_login">Login</label>
             <input autocomplete="off" required class="input" type="text" name="login" id="input_login">
 

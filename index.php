@@ -1,4 +1,7 @@
-<?php include_once 'header.php'; ?>
+<?php 
+session_start();
+include_once 'header.php'; 
+?>
 
 <!-- mesma pasta, logo não precisa adicionar diretório -->
 
