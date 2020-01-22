@@ -5,7 +5,7 @@ include_once 'header.php';
 
 <!-- mesma pasta, logo não precisa adicionar diretório -->
 
-<div class="body-container">
+<div class="body-container container">
     <?php
     
     /* colocar valores no espaço de página url num=78&charac=oi&ola=tudobem 
@@ -25,6 +25,12 @@ include_once 'header.php';
         case 'login':
             include_once 'view/login.php';
             break;
+        case 'pacientes':
+            include_once 'view/paciente.php';
+            break; 
+        case 'salvarPaciente':
+            include_once 'view/salvarPaciente.php';
+            break;        
         default:
             include_once 'view/home.php'; 
     }

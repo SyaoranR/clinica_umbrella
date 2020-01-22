@@ -3,6 +3,7 @@ body {
     margin: 0;
 }
 
+/* conflito com outro css
 .container {
     width: 100%;
     padding: 10px 15px;
@@ -11,17 +12,23 @@ body {
 .body-container {
     min-height: 80vh;
  }
+*/
 
 /* , tanto para um quanto para outro*/
-.container,
+/* .container, */
 .body-container {
+    min-height: 80vh;
     width: 60%;
     padding: 10px 20%;
 }
 
+header{
+    background-color: black;
+}
+
+
 .cabecalho {
     height: 100px;
-    background-color: black;
     /* se mover, mas dentro da mesma linha , sem isso, aparece tudo abaixo */
     display: inline-flex;
 }

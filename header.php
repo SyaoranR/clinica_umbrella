@@ -10,6 +10,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- indica qual vai ser o arquivo (a referência para estilo) de estilo -->
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/datatables.min.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,6 +19,7 @@
     
     <!-- Cabeçalho -->
     <!-- Define um espaço sem visualização, divide em partes menores -->
+    <nav class="navbar sticked-top">
     <div class="container cabecalho">
         <a href="?pagina=home">
             <!-- Alt = texto alternativo se img não aparecer --> 
@@ -67,5 +70,5 @@
         <span id="nome-logo">Clínica Umbrella</span>
          -->
     </div>
-    
+    </nav>         
 </header>    
