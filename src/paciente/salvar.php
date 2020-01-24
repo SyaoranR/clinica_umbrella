@@ -1,7 +1,7 @@
 <?php
 
 // conexão com o banco
-require 'src/conexao-com-banco.php';
+require '../conexao-com-banco.php';
 
 // receber dados POST
 $id = isset($_POST['id']) ? $_POST['id'] : 0;
@@ -30,10 +30,13 @@ if (!empty($nome) && !empty($data_nascimento) && !empty($cpf)) {
     }
     // faz a query
     mysqli_query($conexao, $sql);
+
+    // echo mysqli_error($conexao);
+
     // retornar para página pacientes
     header('location: http://localhost/clinica_umbrella/index.php?pagina=pacientes');
 // senão ...
 } else {
     // retornar para a página de cadastro
-    header('location: http://localhost/clinica_umbrella/index.php?pagina=cadastrarPaciente&erro=Dados inválidos');
+    header('location: http://localhost/clinica_umbrella/index.php?pagina=salvarPaciente&erro=Dados inválidos');
 }

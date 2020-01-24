@@ -30,7 +30,19 @@ include_once 'header.php';
             break; 
         case 'salvarPaciente':
             include_once 'view/salvarPaciente.php';
-            break;        
+            break;  
+        case 'medicos':
+            include_once 'view/medico.php';
+            break; 
+        case 'salvarMedico':
+            include_once 'view/salvarMedico.php';
+            break;   
+        case 'consultas':
+            include_once 'view/consulta.php';
+            break; 
+        case 'salvarConsulta':
+            include_once 'view/salvarConsulta.php';
+            break;          
         default:
             include_once 'view/home.php'; 
     }

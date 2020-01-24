@@ -3,9 +3,9 @@
 // conexão com o banco
 require 'src/conexao-com-banco.php'; // aberto diretamente no index/*
 
-// pesquisar todos os pacientes
-$sql = "SELECT * FROM `paciente`;";
+// pesquisar todos os médicos
+$sql = "SELECT * FROM `medico`;";
 
-$tabelaPacientes = mysqli_query($conexao, $sql);
+$tabelaMedicos = mysqli_query($conexao, $sql);
 
 // armazenar em array associativo

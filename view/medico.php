@@ -1,35 +1,35 @@
 <?php 
 
 // require arquivo de listagem
-require 'src/paciente/listar.php'; ?>
+require 'src/medico/listar.php'; ?>
 
 <br><br>
 <!-- montar tabela (html) -->
-<table class="table table-bordered table-hover table-striped" style="width: 100%" id="tabela-pacientes">
+<table class="table table-bordered table-hover table-striped" style="width: 100%" id="tabela-medicos">
     <caption> <!-- legenda da tabela -->
-        <a class="btn btn-success" href="?pagina=salvarPaciente">Cadastrar</a>
+        <a class="btn btn-success" href="?pagina=salvarMedico">Cadastrar</a>
     </caption> 
     <thead>
         <tr>
             <th>Nome</th>
-            <th>Data de Nascimento</th>
-            <th>CPF</th>
+            <th>Área</th>
+            <th>E-mail</th>
             <th>Ações</th>
         </tr>
     </thead>
     <tbody> <!-- table body -->
-    <?php while ($linha = mysqli_fetch_assoc($tabelaPacientes)) { ?>
+    <?php while ($linha = mysqli_fetch_assoc($tabelaMedicos)) { ?>
     <!-- fetch = formata cada linha do while -->
 
     <tr>
         <td><?= $linha['nome'] ?></td>
-        <td><?= $linha['data_nascimento'] ?></td>
-        <td><?= $linha['cpf'] ?></td>
+        <td><?= $linha['area'] ?></td>
+        <td><?= $linha['email'] ?></td>
         <td>
-            <a href="?pagina=salvarPaciente&id=<?= $linha['id'] ?>">Editar</a>
+            <a href="?pagina=salvarMedico&id=<?= $linha['id'] ?>">Editar</a>
             |
             <!-- apenas faz uma ação -->
-            <a href="src/paciente/excluir.php?id=<?= $linha['id'] ?>">Excluir</a>
+            <a href="src/medico/excluir.php?id=<?= $linha['id'] ?>">Excluir</a>
         </td>
     </tr>
 
@@ -42,7 +42,7 @@ require 'src/paciente/listar.php'; ?>
 <!-- não funciona aqui
 <script>
 $(document).ready( function () {
-    $('#tabela-pacientes').DataTable();
+    $('#tabela-medicos').DataTable();
 } );
 </script>
 -->
